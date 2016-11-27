@@ -65,6 +65,78 @@ Comandos mais usados no Docker.
 
 `$ docker rmi [id ou nome]`
 
+**Executa um comando dentro do container retornando essas informações para o terminal local**
+
+`$ docker exec -it [id ou nome] ps aux`
+
+**Mata um container que não está respondendo**
+
+`$ docker kill [id ou nome]`
+
+**Cria um container descartável que será delatado no momento do exit**
+
+`$ docker run --rm -it ubuntu bash`
+
+**Comita as alterações feitas em um container para imagem (imagem/apache indica que um fork será feito da imagem principal)**
+
+`$ docker commit -m "instalação do apache" [nome ou id do container] [imagem]/apache`
+
+**Cria um container fazendo o mapeamento de portas 8080 indica a porta local da máquina e 80 a porta para qual será mapeada dentro do container**
+
+`$ docker run -it -p 8080:80 ubuntu/apache bash`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
+****
+
+`$`
+
 ****
 
 `$`
