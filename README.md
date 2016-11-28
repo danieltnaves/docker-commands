@@ -85,13 +85,19 @@ Comandos mais usados no Docker.
 
 `$ docker run -it -p 8080:80 ubuntu/apache bash`
 
-****
+**Exemplo de arquivo Dockerfile (Um arquivo Dockerfile possui uma série de instruções para montagem de uma imagem de forma automatizada)**
 
-`$`
+FROM ubuntu //indica a imagem base a ser utilizada
 
-****
+RUN apt-get update && apt-get install -y apache2 //comando a ser executado na criação da imagem
 
-`$`
+EXPOSE 80 //porta que será exposta
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] //inicialização do processo do Apache
+
+**Realiza build do Dockerfile, o . indicar o diretório onde está o arquivo Dockerfile**
+
+`$ docker build -t ubuntu/apache .`
 
 ****
 
