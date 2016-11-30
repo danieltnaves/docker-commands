@@ -99,9 +99,9 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] //inicialização do processo d
 
 `$ docker build -t ubuntu/apache .`
 
-****
+**Retornar os dados do container**
 
-`$`
+`$ docker inspect [id ou nome]`
 
 ****
 
