@@ -107,9 +107,9 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] //inicialização do processo d
 
 `$ docker logs -f [id ou nome]`
 
-****
+**Renomear tag da imagem**
 
-`$`
+`$ docker tag nome_antigo nome_novo`
 
 ****
 
