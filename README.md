@@ -103,9 +103,9 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] //inicialização do processo d
 
 `$ docker inspect [id ou nome]`
 
-****
+**Lista logs de um container**
 
-`$`
+`$ docker logs -f [id ou nome]`
 
 ****
 
