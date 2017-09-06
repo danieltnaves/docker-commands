@@ -111,9 +111,9 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"] //inicialização do processo d
 
 `$ docker tag nome_antigo nome_novo`
 
-****
+**Entre em um container como root**
 
-`$`
+`$ docker exec -u 0 -it containerName bash`
 
 ****
 
